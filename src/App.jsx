@@ -1,4 +1,3 @@
-import "./app.css";
 import UseStateHook from "../src/components/useState";
 import {
   BgColor,
@@ -20,7 +19,7 @@ function App() {
   const [amount, setAmount] = useState("");
   const [from, setFrom] = useState("usd");
   const [to, setTo] = useState("inr");
-  const [convertedAmount, setConvertedAmount] = useState(0);
+  const [convertedAmount, setConvertedAmount] = useState();
 
   const currencyInfo = useCurrencyInfo(from);
   const options = Object.keys(currencyInfo);
